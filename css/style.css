@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+}
+nav {
+    display: flex;
+    justify-content: space-around ;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    background-color: rgb(59, 36, 36);
+    color: black;
+}
+.links a{
+   margin-left: 1vw;
+
+}
+
+.pagetitle{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.9vw;
+    margin-right: 50%;
+}
+@media screen and ( max-width: 600px )
+{
+    nav{
+        position: relative;
+    }
+    .pagetitle{
+        padding: 1vw;
+        color: rgb(110, 61, 61);
+        
+    }
+    .links{
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        box-shadow: rgb(185, 173, 173);
+        z-index: 1;
+        background-color: rgb(63, 29, 29)
+        
+    }
+    .links a{
+        color: black;
+        padding: 12px 16px;
+        display: block;
+    }
+    .links a:hover{background-color: rgb(112, 104, 109)}
+    nav:hover .links{display: block;}
+    nav:hover .pagetitle{background-color:rgb(56, 34, 34);}
+
+}
+.vid{
+ width: 100vw;
+ height: 45.6vw;
+ object-fit: cover;
+ position: absolute;
+ z-index: -1;
+ top: 0;
+ left: 0;
+}
+.container
+{
+  position: relative;
+}
+.banner{
+    height: 13vw;
+    background-color: rgba(0, 0, 0, 0.548);
+    z-index: 9;
+}
+.bannerhead{
+   margin-left: 2vw;
+   padding-top: 4vw;
+font-family:'Courier New', Courier, monospace;
+    color: white;
+font-size: 3vw;
+text-align: center;
+
+}
+article{
+    padding-top: 1vw;
+    color: white;
+    margin-left: 2vw;  
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
